@@ -1,0 +1,42 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+  /*setting the inheritance on each and every element on the
+  entire page, it will inherit from body */
+}
+
+/* rem values are relative to the root html element,
+ not to the parent element. That is, If font-size of the root 
+ element is 16px then 1 rem = 16px for all elements. 
+ If font-size is not explicitly defined in root element 
+ then 1rem will be equal to the default font-size provided 
+ by the browser (usually 16px). */
+
+/* in this case  1 rem = 10px  -> divide all px unit/10 */
+
+/* best practice is to use percent for a root font-size
+if we want 10px, divide the value(10px)/ the default browser value(16px)  
+10px/16px = 0.625 px -> 62.5% */
+
+html {
+  //This defines what 1rem is
+  font-size: 62.5%;
+}
+
+body {
+  //(THE PART // RELATED TO TYPOGRAPHY WAS MOVED TO THE TYPOGRAPHY FOLDER)
+  //   font-family: 'Lato', sans-serif;
+  //   /* font-size: 16px; */
+  //   line-height: 1.7;
+  //   color: $color-grey-dark;
+  //   padding: 3rem;
+
+  box-sizing: border-box;
+  /*border-box: the border and the paddings are no longer added 
+  to the total width or total height */
+}
+
+/* vh - viewport height */
